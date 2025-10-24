@@ -1,0 +1,18 @@
+{
+  "authors": [
+    {
+      "name": "Nils Adermann",
+      "email": "naderman@naderman.de",
+      "homepage": "https://www.naderman.de",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Practica4\\": "./"
+    }
+  },
+  "require": {
+    "ext-fileinfo": "*"
+  }
+}

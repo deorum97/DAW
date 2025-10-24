@@ -1,0 +1,85 @@
+body {
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow: hidden;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 0;
+}
+.me-6 {
+  margin-right: 6rem;
+}
+.ms-6 {
+  margin-left: 6rem;
+}
+
+.mac-window {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 800px;
+  height: 500px; /* altura fija */
+  overflow: hidden; /* evita que crezca */
+}
+
+.mac-header {
+  background-color: #919192;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.mac-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mac-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.mac-btn.red {
+  background-color: #ff605c;
+}
+
+.mac-btn.yellow {
+  background-color: #ffbd44;
+}
+
+.mac-btn.green {
+  background-color: #00ca4e;
+}
+
+.mac-content {
+  padding: 1rem;
+  background-color: #ddd;
+  max-width: 800px;
+  height: 500px; /* altura fija */
+  overflow: hidden;
+  cursor: context-menu;
+}
+
+@media (max-width: 726px) {
+  .me-6,
+  .me-6 {
+    margin-right: 2.5rem;
+  }
+  .ms-6,
+  .ms-6 {
+    margin-left: 2.5rem;
+  }
+}

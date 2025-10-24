@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85e38b03-ba7b-4d7f-a66c-037005c34133" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/practica4/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/practica3/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\Program Files\Ampps\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/practica3/vendor/composer" />
+      <path value="$PROJECT_DIR$/practica4/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="33QViQJiETu5mE7j8f1AG8ZeRWK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary&quot;: &quot;PHPUnit&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Ampps/www/DWES/ud2/practica4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Ampps\www\DWES\ud2\practica4" />
+      <recent name="C:\Program Files\Ampps\www\DWES\ud2\login falso" />
+      <recent name="C:\Program Files\Ampps\www\DWES\ud2\practica3" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85e38b03-ba7b-4d7f-a66c-037005c34133" name="Changes" comment="" />
+      <created>1759249412601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759249412601</updated>
+      <workItem from="1759249413048" duration="614000" />
+      <workItem from="1759342537697" duration="314000" />
+      <workItem from="1759342897964" duration="4888000" />
+      <workItem from="1759500038111" duration="3676000" />
+      <workItem from="1759765771624" duration="339000" />
+      <workItem from="1759766120362" duration="4490000" />
+      <workItem from="1759845973166" duration="3936000" />
+      <workItem from="1759944278928" duration="3217000" />
+      <workItem from="1760105649004" duration="5344000" />
+      <workItem from="1760366453347" duration="3808000" />
+      <workItem from="1760371138443" duration="5046000" />
+      <workItem from="1760450644687" duration="7173000" />
+      <workItem from="1760538382612" duration="141000" />
+      <workItem from="1760551756921" duration="3828000" />
+      <workItem from="1760629882573" duration="230000" />
+      <workItem from="1760980340458" duration="2740000" />
+      <workItem from="1761056048606" duration="4041000" />
+      <workItem from="1761157169340" duration="2129000" />
+      <workItem from="1761314891910" duration="11419000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

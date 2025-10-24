@@ -1,0 +1,114 @@
+body,
+html {
+  background-color: #ebecf0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  margin: 0;
+}
+
+body,
+input[type="text"],
+button {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+div {
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  border-radius: calc(0.5rem * 2);
+}
+
+form {
+  padding: 16px;
+  width: calc(1rem * 20);
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 16px * 2 0;
+  text-align: center;
+}
+
+button,
+input[type="text"] {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: calc(0.5rem * 20);
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.text {
+  display: block;
+  margin: auto;
+  margin-bottom: calc(0.5rem * 1.5);
+  width: 80%;
+}
+
+input[type="text"] {
+  margin-right: calc(0.5rem / 2);
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  }
+}
+
+button {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+  }
+
+  &:active {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  }
+
+  &.unit {
+    border-radius: calc(1.8rem / 2);
+    line-height: 0;
+    width: calc(0.5rem * 3);
+    height: calc(0.5rem * 3);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 calc(0.5rem / 2);
+    font-size: calc(1rem * 1.2);
+  }
+
+  &.red {
+    display: block;
+    width: 80%;
+    margin: auto;
+    color: #ae1100;
+  }
+}
+
+.input[type="text"]-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  label {
+    margin: 0;
+    flex: 1;
+  }
+}

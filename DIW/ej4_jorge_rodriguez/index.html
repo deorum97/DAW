@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div>
+    <h1>Formulario simple</h1>
+    <form action="#">
+      <p>Texto para el checkbox</p>
+      <input type="checkbox" name="" />
+      <label class=""></label><br />
+      <input type="checkbox" name="" />
+      <label></label><br />
+      <input type="checkbox" name="" />
+      <label></label><br />
+
+      <p>Texto para el radius</p>
+      <input type="radio" name="form" />
+      <label class="radio">si</label><br />
+      <input type="radio" name="form" />
+      <label class="radio">no</label><br /><br /><br />
+
+      <label class="text">
+        <input
+          type="text"
+          required
+          pattern="^(1[89]|[2-5][0-9]|6[0-5])$"
+          title="entre 18 y 65"
+          placeholder="Edad"
+        />
+      </label>
+
+      <label class="text">
+        <input
+          type="text"
+          required
+          pattern="[A-Za-z]*"
+          title="Solo letras nada de números"
+          placeholder="Introduce un texto"
+        />
+      </label>
+
+      <label class="text">
+        <input
+          type="text"
+          required
+          pattern="[0-9]{8}[A-Za-z]{1}"
+          title="Debes introducir un DNI valido"
+          placeholder="DNI"
+        />
+      </label>
+      <br />
+      <br />
+      <button class="unit red" type="button">Enviar</button>
+    </form>
+  </div>
+</body>

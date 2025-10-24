@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css.css" />
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="container-fluid ms-6 me-6">
+        <a class="navbar-brand" href="#"
+          ><i><b>DTW</b></i></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Tarifas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Documentación
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cómo empezar</a></li>
+                <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Q&A</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="btn btn-outline-dark" type="button">Logerse</button>
+          <button class="btn btn-outline-dark ms-1" type="button">
+            Registrarse
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="me-6 ms-6 mt-5">
+      <section class="row">
+        <article class="col-md-8 col-sm-12">
+          <h1>DISEÑA TU WEB</h1>
+          <div class="row">
+            <div class="col-sm-1 col-md-3"></div>
+            <div class="col-sm-1 col-md-9"></div>
+          </div>
+        </article>
+        <aside class="col-md-4 col-sm-12">
+          <div class="rounded-1 m-2">
+            <div>
+              <div class="mac-window">
+                <div class="mac-header">
+                  <div class="mac-buttons">
+                    <div class="mac-btn red"></div>
+                    <div class="mac-btn yellow"></div>
+                    <div id="restartBtn" class="mac-btn green"></div>
+                  </div>
+                </div>
+                <div class="mac-content">
+                  <pre id="output"></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 pb-0 mb-0 border-top ms-0 me-0 bg-secondary"
+    >
+      <div class="col mb-3">
+        <p class="text-body-secondary">© 2025</p>
+      </div>
+      <div class="col mb-3"></div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const text = `<!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Máquina de escribir multilínea</title>
+      <style>
+        body {
+          background: #111;
+          color: #0f0;
+          font-family: monospace;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+      </style>
+    </head>
+    <body>
+      <div class="tpye">
+        Hola, Bienvenidos a mi pagina web 😎
+      </div>
+    </body>
+  </html>`;
+
+      const output = document.getElementById("output");
+      const restartBtn = document.getElementById("restartBtn");
+      let index = 0;
+      const speed = 20;
+      let timeoutId;
+
+      function type() {
+        if (index < text.length) {
+          output.textContent += text.charAt(index);
+          index++;
+          output.scrollTop = output.scrollHeight;
+          timeoutId = setTimeout(type, speed);
+        }
+      }
+      function restartAnimation() {
+        clearTimeout(timeoutId); // Para la animación en curso
+        output.textContent = ""; // Limpia el contenido
+        index = 0; // Resetea el índice
+        type(); // Empieza la animación otra vez
+      }
+      restartBtn.addEventListener("click", restartAnimation);
+
+      type();
+    </script>
+  </body>
+</html>

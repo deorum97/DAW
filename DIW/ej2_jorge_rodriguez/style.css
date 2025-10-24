@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+.fuente {
+    font-family: sans-serif;
+}
+
+.fuente h1 {
+    font-size: 36px;
+}
+
+.fuente p {
+    line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+.grid p {
+    background: grey;
+    min-height: 10em;
+    align-content: center;
+    text-align: center;
+}
+
+.ani {
+    background: black;
+    transition: 0.3s;
+}
+
+.ani:hover {
+    background: grey;
+}
+
+ul ul {
+    display: none;
+}
+
+ul li:hover>ul {
+    display: block;
+}
+
+div.key {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: relative;
+    background: linear-gradient(90deg, rgba(33, 148, 194, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    animation-name: MyAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes MyAnim {
+    0%{
+        left: 0em; top: 0px;
+    }
+    25%{
+        left: 40%; top:150px
+    }
+    50%{
+        left: 80%; top: 0px;
+    }
+    75%{
+        left: 40%; top:150px
+    }
+    100%{
+        left: 0em; top: 0px;
+    }
+}
+
+.card{
+    background-image: url("burns.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.397);
+}
+
+.card p{
+    position: absolute;
+    bottom: 80px;
+    left: 155px;
+    font-size: 20px;
+}
+
+
+.card:hover{
+    transform: scale(1.05);
+}
+  
+.modal-trigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    border: 3px solid #229395;
+    padding: 16px 32px;
+    font-size: 24px;
+    color: #000;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    transition: all .3s .3s;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, .3);
+}
+
+.close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 8px;
+    background-color: #229395;
+}
+
+.modal-body {
+    padding: 64px;
+    background-color: #7ACBCD;
+}
+
+.modal-container:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-container:target .modal {
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máquina de escribir con altura fija</title>
+    <style>
+      body {
+        background: #111;
+        color: #0f0;
+        font-family: monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .terminal {
+        position: relative;
+        background: #000;
+        border: 2px solid #0f0;
+        padding: 1rem;
+        width: 90%;
+        max-width: 800px;
+        height: 500px; /* altura fija */
+        overflow: hidden; /* evita que crezca */
+        display: flex;
+        align-items: flex-start;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        overflow: hidden;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 0;
+      }
+
+      .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 1em;
+        background: #0f0;
+        margin-left: 2px;
+        animation: blink 0.7s step-end infinite alternate;
+        vertical-align: bottom;
+      }
+
+      @keyframes blink {
+        50% {
+          background: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="terminal">
+      <pre id="output"></pre>
+      <span class="cursor"></span>
+    </div>
+
+    <script>
+      const text = `<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máquina de escribir multilínea</title>
+    <style>
+      body {
+        background: #111;
+        color: #0f0;
+        font-family: monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .typewriter {
+        border-right: 2px solid #0f0;
+        white-space: pre;
+        overflow: hidden;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        animation: typing 12s steps(80) 1s 1 normal both,
+          blink 0.5s step-end infinite alternate;
+      }
+
+      @keyframes typing {
+        0% { width: 0ch; }
+        20% { width: 30ch; }
+        50% { width: 60ch; }
+        80% { width: 90ch; }
+        100% { width: 90ch; }
+      }
+
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="typewriter">
+      Hola, soy una animación CSS. Puedo escribir varios textos. Cada línea aparece una tras otra 😎
+    </div>
+  </body>
+</html>`;
+
+      const output = document.getElementById("output");
+      let index = 0;
+      const speed = 20;
+
+      function type() {
+        if (index < text.length) {
+          output.textContent += text.charAt(index);
+          index++;
+          // desplaza automáticamente si el texto supera la altura
+          output.scrollTop = output.scrollHeight;
+          setTimeout(type, speed);
+        }
+      }
+
+      type();
+    </script>
+  </body>
+</html>

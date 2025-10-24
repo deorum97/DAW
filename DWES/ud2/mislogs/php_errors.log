@@ -1,0 +1,49 @@
+[07-Oct-2025 15:10:13 UTC] PHP Parse error:  syntax error, unexpected token "for", expecting "{" in C:\Program Files\Ampps\www\DWES\ud2\factorial2.php on line 8
+[08-Oct-2025 17:55:25 UTC] PHP Fatal error:  Uncaught Error: Class "Persona" not found in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php on line 2
+[08-Oct-2025 17:56:15 UTC] PHP Warning:  require(Persona): Failed to open stream: No such file or directory in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php on line 2
+[08-Oct-2025 17:56:15 UTC] PHP Stack trace:
+[08-Oct-2025 17:56:15 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\Cliente.php:0
+[08-Oct-2025 17:56:15 UTC] PHP Warning:  require(Persona): Failed to open stream: No such file or directory in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php on line 2
+[08-Oct-2025 17:56:15 UTC] PHP Stack trace:
+[08-Oct-2025 17:56:15 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\Cliente.php:0
+[08-Oct-2025 17:56:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'Persona' (include_path='.;C:\php\pear') in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php on line 2
+[08-Oct-2025 17:56:46 UTC] PHP Warning:  require(perspnaCliente.php): Failed to open stream: No such file or directory in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php on line 2
+[08-Oct-2025 17:56:46 UTC] PHP Stack trace:
+[08-Oct-2025 17:56:46 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\Cliente.php:0
+[08-Oct-2025 17:56:46 UTC] PHP Warning:  require(perspnaCliente.php): Failed to open stream: No such file or directory in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php on line 2
+[08-Oct-2025 17:56:46 UTC] PHP Stack trace:
+[08-Oct-2025 17:56:46 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\Cliente.php:0
+[08-Oct-2025 17:56:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'perspnaCliente.php' (include_path='.;C:\php\pear') in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php:2
+Stack trace:
+#0 {main}
+  thrown in C:\Program Files\Ampps\www\DWES\ud2\Cliente.php on line 2
+[10-Oct-2025 14:45:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function enviar() in C:\Program Files\Ampps\www\DWES\ud2\enviador.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\Program Files\Ampps\www\DWES\ud2\enviador.php on line 26
+[10-Oct-2025 14:46:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function enviar() in C:\Program Files\Ampps\www\DWES\ud2\enviador.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\Program Files\Ampps\www\DWES\ud2\enviador.php on line 26
+[10-Oct-2025 14:47:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function enviar() in C:\Program Files\Ampps\www\DWES\ud2\enviador.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\Program Files\Ampps\www\DWES\ud2\enviador.php on line 26
+[20-Oct-2025 17:28:56 UTC] PHP Warning:  Undefined array key "apellidos" in C:\Program Files\Ampps\www\DWES\ud2\getPost.php on line 7
+[20-Oct-2025 17:28:56 UTC] PHP Stack trace:
+[20-Oct-2025 17:28:56 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\getPost.php:0
+[20-Oct-2025 17:29:02 UTC] PHP Warning:  Undefined array key "apellidos" in C:\Program Files\Ampps\www\DWES\ud2\getPost.php on line 7
+[20-Oct-2025 17:29:02 UTC] PHP Stack trace:
+[20-Oct-2025 17:29:02 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\getPost.php:0
+[24-Oct-2025 15:33:55 UTC] PHP Warning:  Undefined array key "usuario" in C:\Program Files\Ampps\www\DWES\ud2\login_basico.php on line 2
+[24-Oct-2025 15:33:55 UTC] PHP Stack trace:
+[24-Oct-2025 15:33:55 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\login_basico.php:0
+[24-Oct-2025 15:33:55 UTC] PHP Warning:  Undefined array key "pass" in C:\Program Files\Ampps\www\DWES\ud2\login_basico.php on line 3
+[24-Oct-2025 15:33:55 UTC] PHP Stack trace:
+[24-Oct-2025 15:33:55 UTC] PHP   1. {main}() C:\Program Files\Ampps\www\DWES\ud2\login_basico.php:0
