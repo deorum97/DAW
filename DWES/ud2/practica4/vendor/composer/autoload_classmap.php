@@ -6,5 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Acciones' => $baseDir . '/class/Acciones.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Hobby' => $baseDir . '/class/Hobby.php',
+    'LeerLibro' => $baseDir . '/class/LeerLibro.php',
 );

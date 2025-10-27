@@ -8,9 +8,9 @@
     }
   ],
   "autoload": {
-    "psr-4": {
-      "Practica4\\": "./"
-    }
+    "classmap": [
+      "class/"
+    ]
   },
   "require": {
     "ext-fileinfo": "*"
