@@ -20,7 +20,7 @@
       } elseif(isset($_GET["procesado"])){
         echo '<div class="mensaje exito">✅ Se ha procesado correctamente.</div>';
       } elseif(isset($_GET["errF"])){
-        echo '<div class="mensaje advertencia">⚠️ Fallo durante la subida del archivo.</div>';
+        echo '<div class="mensaje advertencia">⚠️ Fallo durante la subida del archivo.</div>'; 
       }
       ?>
 
