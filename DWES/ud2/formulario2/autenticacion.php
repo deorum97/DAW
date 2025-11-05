@@ -1,4 +1,14 @@
 <?php
+    session_start();
     if($_SERVER["REQUEST_METHOD"]==="GET"){
-        
+        if($_GET["usuario"]=="usuario"){
+            if($_GET["clave"]==1234){
+                $_SESSION["usuario"]="usuario";
+                header("Location:calculos.php");
+            }else{
+                header("Location:error.php?error=c");
+            }
+        }else{
+            header("Location:error.php?error=u");
+        }
     }
