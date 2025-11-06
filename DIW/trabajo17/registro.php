@@ -1,3 +1,41 @@
+<?php
+  session_start();
+
+  if(isset($_SESSION["usuario"])){
+    header("Location:index.php");
+  }
+
+  $usuario = $clave = $claveR = "";
+  $usuarioErr = $claveErr = $claveRErr = "";
+
+  if($_SERVER["REQUEST_METHOD"]==="POST"){
+    include("conexion.php");
+
+    $usuario=$_POST["usuario"];
+    $clave=$_POST["clave"];
+    $claveR=$_POST["claveR"];
+
+    $sqlSelect ="SELECT * FROM usuarios WHERE `nombre_usuario` = '$usuario'";
+    $resSelect = mysqli_query($conn,$sqlSelect);
+    if(mysqli_num_rows($resSelect)>0){
+      $usuarioErr = "Ese usuario ya esta en uso";
+    }else if($clave===$claveR){
+      $sqlInsert = "INSERT INTO usuarios(nombre_usuario, clave) VALUES ('$usuario', '$clave')";
+      if (mysqli_query($conn, $sqlInsert)) {
+        $_SESSION["usuario"]=$usuario;
+        header("Location:index.php");
+      } else {
+        $usuarioErr = "Error: " . $sql . "<br>" . mysqli_error($conn);
+      }
+    }else {
+      $claveRErr="La contraseña que has puestos deben ser iguales";
+    }
+    
+    mysqli_close($conn);
+  }
+
+?>
+
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
@@ -9,7 +47,7 @@
   <main class="login">
     <div class="card">
       <div class="card2">
-        <form class="form">
+        <form class="form" method="POST">
           <p id="heading">Registrarse</p>
           <div class="field">
             <svg
@@ -29,8 +67,22 @@
               class="input-field"
               placeholder="Usuario"
               autocomplete="off"
+              name="usuario"
+              value="<?php
+                if($_SERVER["REQUEST_METHOD"]==="POST"){
+                  if(!empty(trim($_POST["usuario"]))){
+                    echo trim($_POST["usuario"]);
+                  }
+                }
+              ?>"
+              required
             />
           </div>
+          <?php
+            if(!empty(trim($usuarioErr))){
+              echo "<p>$usuarioErr</p>";
+            }
+          ?>
           <div class="field">
             <svg
               viewBox="0 0 16 16"
@@ -48,6 +100,8 @@
               type="password"
               class="input-field"
               placeholder="Contraseña"
+              name="clave"
+              required
             />
           </div>
           <div class="field">
@@ -67,8 +121,15 @@
               type="password"
               class="input-field"
               placeholder="Repite contraseña"
+              name="claveR"
+              required
             />
           </div>
+          <?php
+            if(!empty(trim($claveRErr))){
+              echo "<p>$claveRErr</p>";
+            }
+          ?>
           <div class="btn">
             <button class="button3">Registra el usuario</button>
           </div>

@@ -1,3 +1,35 @@
+<?php
+  session_start();
+
+  if(isset($_SESSION["usuario"])){
+    header("Location:index.php");
+  }
+
+  $usuario = $clave = "";
+  $usuarioErr = $claveErr = "";
+
+  if($_SERVER["REQUEST_METHOD"]==="POST"){
+    include("conexion.php");
+
+    $usuario=$_POST["usuario"];
+    $clave=$_POST["clave"];
+
+    $sqlSelect ="SELECT clave FROM usuarios WHERE `nombre_usuario` = '$usuario'";
+    $resSelect = mysqli_query($conn,$sqlSelect);
+    if(mysqli_num_rows($resSelect)<0){
+      $usuarioErr = "No existe ese usuario";
+    }else{
+      while($row = mysqli_fetch_assoc($resSelect)) {
+        if($row["clave"]==$clave){
+          $_SESSION["usuario"]=$usuario;
+        }
+      }
+    }
+    
+    mysqli_close($conn);
+  }
+?>
+
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
@@ -29,8 +61,22 @@
               class="input-field"
               placeholder="Usuario"
               autocomplete="off"
+              name="usuario"
+              value="<?php
+                if($_SERVER["REQUEST_METHOD"]==="POST"){
+                  if(!empty(trim($_POST["usuario"]))){
+                    echo trim($_POST["usuario"]);
+                  }
+                }
+              ?>"
+              required
             />
           </div>
+          <?php
+            if(!empty(trim($usuarioErr))){
+              echo "<p>$usuarioErr</p>";
+            }
+          ?>
           <div class="field">
             <svg
               viewBox="0 0 16 16"
@@ -48,11 +94,13 @@
               type="password"
               class="input-field"
               placeholder="Contraseña"
+              name="clave"
+              required
             />
           </div>
           <div class="btn">
             <button class="button1" type="submit">Login</button>
-            <a href="registro.html" class="">
+            <a href="registro.php" class="">
               <button class="button2" type="button">Registrarse</button>
             </a>
           </div>
