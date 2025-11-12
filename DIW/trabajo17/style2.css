@@ -23,7 +23,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* ======== LINKS ======== */
+/* ======== ENLACES ======== */
 .nav-links {
   list-style: none;
   display: flex;
@@ -43,6 +43,21 @@ body {
   color: #fff;
 }
 
+/* ======== BOTONES ======== */
+
+.btn-outline-dark {
+  color: #fff;
+  border: 1px solid #3a3a3a;
+  background-color: #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background: linear-gradient(90deg, #00ff88, #0077ff);
+  border: 1px solid #0077ff;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 255, 150, 0.6);
+}
 /* ======== DROPDOWN ======== */
 .dropdown {
   position: relative;
@@ -66,6 +81,10 @@ body {
   padding: 0.5rem 1rem;
 }
 
+.dropdown-menu li:hover {
+  padding: 0.5rem 1rem;
+  border-bottom: 5px solid linear-gradient(90deg, #00ff88, #0077ff);
+}
 .dropdown-menu a {
   color: #ccc;
   display: block;
@@ -110,6 +129,12 @@ main {
 }
 
 h1 {
+  background-color: #121212;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: #fff;
-  font-weight: 400;
 }

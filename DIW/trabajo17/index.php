@@ -42,7 +42,7 @@
                 </ul>
                 <div class="nav-buttons">
                   <a href="unLogin.php">
-                    <button>
+                    <button class="btn-outline-dark">
                       Desloguearse
                     </button>
                   </a>
@@ -53,8 +53,8 @@
         </ul>
 
         <div class="nav-buttons">
-          <a href="login.html"><button>Loguearse</button></a>
-          <a href="registro.html"><button>Registrarse</button></a>
+          <a href="login.php"><button class="btn-outline-dark">Loguearse</button></a>
+          <a href="registro.php"><button class="btn-outline-dark">Registrarse</button></a>
         </div>
         <?php
               }
