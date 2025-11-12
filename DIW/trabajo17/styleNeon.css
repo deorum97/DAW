@@ -1,0 +1,114 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+  background-color: #1b1b1b; /* Fondo oscuro */
+  color: #f1f1f1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background-color: #121212 !important;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.navbar-nav .nav-link {
+  color: #d1d1d1 !important;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00ffcc !important;
+}
+
+/* ======== BOTONES ======== */
+.btn-outline-dark {
+  color: #fff;
+  border: 1px solid #3a3a3a;
+  background-color: #2a2a2a;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background: linear-gradient(90deg, #00ff88, #0077ff);
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 255, 150, 0.6);
+}
+
+/* ======== MAIN ======== */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* ======== CONTENEDOR PRINCIPAL (tipo login card) ======== */
+h1 {
+  background-color: #111;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(0, 255, 128, 0.5), 0 0 25px rgba(0, 128, 255, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+/* Efecto neón alrededor del contenedor */
+h1::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #00ff88, #0077ff);
+  z-index: -1;
+  filter: blur(8px);
+}
+
+/* ======== DROPDOWN ======== */
+.dropdown-menu {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.dropdown-item {
+  color: #ccc;
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* ======== SCROLLBAR (opcional) ======== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}

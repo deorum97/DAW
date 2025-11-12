@@ -10,6 +10,26 @@ main {
   flex: 1;
 }
 
+.bg-gradient-perso {
+  background: #3d3d3d;
+  background: linear-gradient(
+    32deg,
+    rgba(61, 61, 61, 1) 0%,
+    rgba(255, 255, 255, 1) 92%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.bg-gradient-perso-foot {
+  background: #3d3d3d;
+  background: linear-gradient(
+    0deg,
+    rgba(61, 61, 61, 1) 0%,
+    rgba(255, 255, 255, 1) 98%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
 pre {
   white-space: pre-wrap;
   overflow: hidden;
